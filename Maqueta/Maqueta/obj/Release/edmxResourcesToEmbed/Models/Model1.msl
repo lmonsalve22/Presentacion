@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="sudaustralModelStoreContainer" CdmEntityContainer="sudaustralEntities1">
+    <EntitySetMapping Name="ORIGENDATOS">
+      <EntityTypeMapping TypeName="sudaustralModel.ORIGENDATO">
+        <MappingFragment StoreEntitySet="ORIGENDATOS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="NOMBREARCHIVO" ColumnName="NOMBREARCHIVO" />
+          <ScalarProperty Name="TIPOENTIDAD" ColumnName="TIPOENTIDAD" />
+          <ScalarProperty Name="ORGANISMO" ColumnName="ORGANISMO" />
+          <ScalarProperty Name="AUTOR" ColumnName="AUTOR" />
+          <ScalarProperty Name="LINK" ColumnName="LINK" />
+          <ScalarProperty Name="API" ColumnName="API" />
+          <ScalarProperty Name="LINKAPI" ColumnName="LINKAPI" />
+          <ScalarProperty Name="APIPUBLICA" ColumnName="APIPUBLICA" />
+          <ScalarProperty Name="TAG" ColumnName="TAG" />
+          <ScalarProperty Name="VOLUMETRIA" ColumnName="VOLUMETRIA" />
+          <ScalarProperty Name="UNIDADVOLUMETRIA" ColumnName="UNIDADVOLUMETRIA" />
+          <ScalarProperty Name="RUTANAVEGACION" ColumnName="RUTANAVEGACION" />
+          <ScalarProperty Name="ENLACEDESCARGA" ColumnName="ENLACEDESCARGA" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="RUTACARPETA" ColumnName="RUTACARPETA" />
+          <ScalarProperty Name="FECHACONSULTA" ColumnName="FECHACONSULTA" />
+          <ScalarProperty Name="FECHAINICIODATOS" ColumnName="FECHAINICIODATOS" />
+          <ScalarProperty Name="FECHAFINALDATOS" ColumnName="FECHAFINALDATOS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

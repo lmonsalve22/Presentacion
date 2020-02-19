@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sudaustralModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ORIGENDATOS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="float" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="250" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="250" />
+    <Property Name="NOMBREARCHIVO" Type="varchar" MaxLength="250" />
+    <Property Name="TIPOENTIDAD" Type="varchar" MaxLength="250" />
+    <Property Name="ORGANISMO" Type="varchar" MaxLength="250" />
+    <Property Name="AUTOR" Type="varchar" MaxLength="250" />
+    <Property Name="LINK" Type="varchar" MaxLength="250" />
+    <Property Name="API" Type="varchar" MaxLength="250" />
+    <Property Name="LINKAPI" Type="varchar" MaxLength="250" />
+    <Property Name="APIPUBLICA" Type="varchar" MaxLength="250" />
+    <Property Name="TAG" Type="varchar" MaxLength="250" />
+    <Property Name="VOLUMETRIA" Type="float" />
+    <Property Name="UNIDADVOLUMETRIA" Type="varchar" MaxLength="250" />
+    <Property Name="RUTANAVEGACION" Type="varchar" MaxLength="250" />
+    <Property Name="ENLACEDESCARGA" Type="varchar" MaxLength="250" />
+    <Property Name="OBSERVACIONES" Type="varchar" MaxLength="250" />
+    <Property Name="RUTACARPETA" Type="varchar" MaxLength="250" />
+    <Property Name="FECHACONSULTA" Type="datetime" />
+    <Property Name="FECHAINICIODATOS" Type="datetime" />
+    <Property Name="FECHAFINALDATOS" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="sudaustralModelStoreContainer">
+    <EntitySet Name="ORIGENDATOS" EntityType="Self.ORIGENDATOS" Schema="ADMIN" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

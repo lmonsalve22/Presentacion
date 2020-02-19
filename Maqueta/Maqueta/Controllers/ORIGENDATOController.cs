@@ -57,6 +57,7 @@ namespace Maqueta.Controllers
         {
             if (ModelState.IsValid)
             {
+                oRIGENDATO.ID = db.ORIGENDATOS.Max(x => x.ID) + 1;
                 db.ORIGENDATOS.Add(oRIGENDATO);
                 db.SaveChanges();
                 return RedirectToAction("Index");

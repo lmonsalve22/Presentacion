@@ -130,7 +130,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ORIGENDATOController.cs" />
-    <Compile Include="Controllers\ORIGENDATOesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -182,6 +181,7 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\Maqueta20200219032348 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -207,11 +207,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\ORIGENDATOes\Create.cshtml" />
-    <Content Include="Views\ORIGENDATOes\Delete.cshtml" />
-    <Content Include="Views\ORIGENDATOes\Details.cshtml" />
-    <Content Include="Views\ORIGENDATOes\Edit.cshtml" />
-    <Content Include="Views\ORIGENDATOes\Index.cshtml" />
     <Content Include="Views\ORIGENDATO\Create.cshtml" />
     <Content Include="Views\ORIGENDATO\Delete.cshtml" />
     <Content Include="Views\ORIGENDATO\Details.cshtml" />

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Maqueta.Models.ORIGENDATO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOMBREARCHIVO)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.TAG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ENLACEDESCARGA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OBSERVACIONES)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RUTACARPETA)
+        </th>        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOMBRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOMBREARCHIVO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TAG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ENLACEDESCARGA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OBSERVACIONES)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RUTACARPETA)
+        </td>        
+    </tr>
+}
+
+</table>
