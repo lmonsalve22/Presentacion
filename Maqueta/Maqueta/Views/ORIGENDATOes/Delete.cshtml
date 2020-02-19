@@ -1,0 +1,184 @@
+﻿@model Maqueta.Models.ORIGENDATO
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ORIGENDATO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCRIPCION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOMBREARCHIVO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBREARCHIVO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TIPOENTIDAD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TIPOENTIDAD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ORGANISMO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ORGANISMO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AUTOR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AUTOR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LINK)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LINK)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.API)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.API)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LINKAPI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LINKAPI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APIPUBLICA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APIPUBLICA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TAG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TAG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VOLUMETRIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VOLUMETRIA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UNIDADVOLUMETRIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UNIDADVOLUMETRIA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RUTANAVEGACION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RUTANAVEGACION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ENLACEDESCARGA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ENLACEDESCARGA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OBSERVACIONES)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OBSERVACIONES)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RUTACARPETA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RUTACARPETA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHACONSULTA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHACONSULTA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHAINICIODATOS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHAINICIODATOS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHAFINALDATOS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHAFINALDATOS)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

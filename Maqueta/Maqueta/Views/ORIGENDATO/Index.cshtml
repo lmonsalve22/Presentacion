@@ -1,0 +1,147 @@
+﻿@model IEnumerable<Maqueta.Models.ORIGENDATO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DESCRIPCION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOMBREARCHIVO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPOENTIDAD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ORGANISMO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AUTOR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LINK)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.API)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LINKAPI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APIPUBLICA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TAG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VOLUMETRIA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UNIDADVOLUMETRIA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RUTANAVEGACION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ENLACEDESCARGA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OBSERVACIONES)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RUTACARPETA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FECHACONSULTA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FECHAINICIODATOS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FECHAFINALDATOS)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DESCRIPCION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOMBRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOMBREARCHIVO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPOENTIDAD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ORGANISMO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AUTOR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LINK)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.API)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LINKAPI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APIPUBLICA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TAG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VOLUMETRIA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UNIDADVOLUMETRIA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RUTANAVEGACION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ENLACEDESCARGA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OBSERVACIONES)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RUTACARPETA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FECHACONSULTA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FECHAINICIODATOS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FECHAFINALDATOS)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
