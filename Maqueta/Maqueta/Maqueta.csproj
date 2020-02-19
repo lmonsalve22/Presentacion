@@ -217,6 +217,7 @@
     <Content Include="Views\ORIGENDATO\Details.cshtml" />
     <Content Include="Views\ORIGENDATO\Edit.cshtml" />
     <Content Include="Views\ORIGENDATO\Index.cshtml" />
+    <Content Include="Views\ORIGENDATO\BuscarDataset.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

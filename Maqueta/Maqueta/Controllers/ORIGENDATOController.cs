@@ -20,6 +20,13 @@ namespace Maqueta.Controllers
             return View(db.ORIGENDATOS.ToList());
         }
 
+        // GET: ORIGENDATO
+        public ActionResult BuscarDataset(string id)
+        {
+            var salida = db.ORIGENDATOS.Where(x => x.TAG.Contains(id));
+            return View(salida.ToList());
+        }
+
         // GET: ORIGENDATO/Details/5
         public ActionResult Details(double? id)
         {
@@ -123,5 +130,7 @@ namespace Maqueta.Controllers
             }
             base.Dispose(disposing);
         }
+
+
     }
 }

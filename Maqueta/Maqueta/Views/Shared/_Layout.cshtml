@@ -28,6 +28,17 @@
         </div>
     </div>
     <div class="container body-content">
+        <div class="col-4">
+            <div>
+                <h3> Ingrese el nombre de la tabla en la base de datos que desea buscar</h3>
+            </div>
+
+            @using (Html.BeginForm("BuscarDataset", "ORIGENDATO", FormMethod.Get, htmlAttributes: new { @class = "form-inline my-2 my-lg-0" }))
+            {
+                @Html.TextBox("id", null, htmlAttributes: new { @class = "form-control col-10", placeholder = "Escribe la tabla que buscas", id = "buscador", size = 50, onkeyup = "filtroNombre()" })
+                <button class="btn btn-success col-2" type="submit">Buscar</button>
+            }
+        </div>
         @RenderBody()
         <hr />
         <footer>
