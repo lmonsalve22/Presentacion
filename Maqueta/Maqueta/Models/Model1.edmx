@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="sudaustralModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ORIGENDATOS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="float" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="250" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="250" />
+          <Property Name="NOMBREARCHIVO" Type="varchar" MaxLength="250" />
+          <Property Name="TIPOENTIDAD" Type="varchar" MaxLength="250" />
+          <Property Name="ORGANISMO" Type="varchar" MaxLength="250" />
+          <Property Name="AUTOR" Type="varchar" MaxLength="250" />
+          <Property Name="LINK" Type="varchar" MaxLength="250" />
+          <Property Name="API" Type="varchar" MaxLength="250" />
+          <Property Name="LINKAPI" Type="varchar" MaxLength="250" />
+          <Property Name="APIPUBLICA" Type="varchar" MaxLength="250" />
+          <Property Name="TAG" Type="varchar" MaxLength="250" />
+          <Property Name="VOLUMETRIA" Type="float" />
+          <Property Name="UNIDADVOLUMETRIA" Type="varchar" MaxLength="250" />
+          <Property Name="RUTANAVEGACION" Type="varchar" MaxLength="250" />
+          <Property Name="ENLACEDESCARGA" Type="varchar" MaxLength="250" />
+          <Property Name="OBSERVACIONES" Type="varchar" MaxLength="250" />
+          <Property Name="RUTACARPETA" Type="varchar" MaxLength="250" />
+          <Property Name="FECHACONSULTA" Type="datetime" />
+          <Property Name="FECHAINICIODATOS" Type="datetime" />
+          <Property Name="FECHAFINALDATOS" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="sudaustralModelStoreContainer">
+          <EntitySet Name="ORIGENDATOS" EntityType="Self.ORIGENDATOS" Schema="ADMIN" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="sudaustralModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ORIGENDATO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Double" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="NOMBRE" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="NOMBREARCHIVO" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="TIPOENTIDAD" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="ORGANISMO" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="AUTOR" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="LINK" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="API" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="LINKAPI" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="APIPUBLICA" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="TAG" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="VOLUMETRIA" Type="Double" />
+          <Property Name="UNIDADVOLUMETRIA" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="RUTANAVEGACION" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="ENLACEDESCARGA" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="OBSERVACIONES" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="RUTACARPETA" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="FECHACONSULTA" Type="DateTime" Precision="3" />
+          <Property Name="FECHAINICIODATOS" Type="DateTime" Precision="3" />
+          <Property Name="FECHAFINALDATOS" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="sudaustralEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ORIGENDATOS" EntityType="Self.ORIGENDATO" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="sudaustralModelStoreContainer" CdmEntityContainer="sudaustralEntities1">
+          <EntitySetMapping Name="ORIGENDATOS">
+            <EntityTypeMapping TypeName="sudaustralModel.ORIGENDATO">
+              <MappingFragment StoreEntitySet="ORIGENDATOS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="NOMBREARCHIVO" ColumnName="NOMBREARCHIVO" />
+                <ScalarProperty Name="TIPOENTIDAD" ColumnName="TIPOENTIDAD" />
+                <ScalarProperty Name="ORGANISMO" ColumnName="ORGANISMO" />
+                <ScalarProperty Name="AUTOR" ColumnName="AUTOR" />
+                <ScalarProperty Name="LINK" ColumnName="LINK" />
+                <ScalarProperty Name="API" ColumnName="API" />
+                <ScalarProperty Name="LINKAPI" ColumnName="LINKAPI" />
+                <ScalarProperty Name="APIPUBLICA" ColumnName="APIPUBLICA" />
+                <ScalarProperty Name="TAG" ColumnName="TAG" />
+                <ScalarProperty Name="VOLUMETRIA" ColumnName="VOLUMETRIA" />
+                <ScalarProperty Name="UNIDADVOLUMETRIA" ColumnName="UNIDADVOLUMETRIA" />
+                <ScalarProperty Name="RUTANAVEGACION" ColumnName="RUTANAVEGACION" />
+                <ScalarProperty Name="ENLACEDESCARGA" ColumnName="ENLACEDESCARGA" />
+                <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+                <ScalarProperty Name="RUTACARPETA" ColumnName="RUTACARPETA" />
+                <ScalarProperty Name="FECHACONSULTA" ColumnName="FECHACONSULTA" />
+                <ScalarProperty Name="FECHAINICIODATOS" ColumnName="FECHAINICIODATOS" />
+                <ScalarProperty Name="FECHAFINALDATOS" ColumnName="FECHAFINALDATOS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
